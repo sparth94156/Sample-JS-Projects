@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2d05d55c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle1">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <p>Go back</p>
+                </div>
+                <div class="circle2">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>Your Profile</p>
+                </div>
+            </nav>
+            <img src="media/468-thumbnail.png" id="music-img">
+
+            <h1 id="songName">Despacito</h1>
+            <p id="singer">Luis Founsi ft. Track Tribe</p>
+
+            <audio id="song"> 
+                <source src="media/Little Umbrellas - TrackTribe.mp3" type="audio/mpeg">
+            </audio>
+            
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward" id="previous"></i></div>
+                <div><i class="fa-solid fa-pause" id="ctrlIcon"></i></i></div>
+                <div><i class="fa-solid fa-forward" id="next"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

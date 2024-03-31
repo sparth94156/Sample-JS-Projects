@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+body{
+    background: rgb(87, 86, 86);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: linear-gradient(135deg, #247BA0,#86b5d1);
+    height: 75vh;
+    width: 60vh;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+.search{
+    display: flex;
+    height: 20%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.search input{
+    height: 2.5rem;
+    width: 75%;
+    padding-left: 20px ;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.search-icon{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+.image img{
+    width: 35%;
+    height: 40%;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.error{
+    color: #fff;
+    margin: -10px 30px;
+    font-size: 1rem;
+    display: none;
+}
+.weather-icon{
+    /* background: black; */
+    object-fit: cover;
+
+}
+.weather-icon .weather-image{
+    height: 150px;
+}
+.temperature{
+    text-align: center;
+    color: #fff;
+}
+.temperature h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.temperature h2{
+    font-size: 2rem;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap: 2rem;
+}
+.humidity-icon, .wind-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    color: white;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.humidity-icon img,
+.wind-icon img{
+    height: 26px;
+}
+.humid-details p,
+.wind-details p{
+    margin: 2px 0;
+}
